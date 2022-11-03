@@ -328,3 +328,15 @@ rasa run --enable-api --cors="*" --debug
 - use OR statements and checkipointing often
 - write out every possible conversation flow start to finish
 - delay user testing!
+
+
+# Deployment
+## Integrating with slack
+```bash
+rasa run --connector slack --credentials credentials.yml --endpoints endpoints.yml --cors * --enable-api --debug
+```
+
+Useful links:
+- https://medium.com/analytics-vidhya/integrating-your-rasa-chat-bot-with-slack-c18bffc6018b
+- https://api.slack.com/apps
+- https://rasa.com/docs/rasa/connectors/slack/
